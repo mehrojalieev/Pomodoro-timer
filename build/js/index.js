@@ -2,8 +2,11 @@ const ResultCount = document.querySelector("#result-count");
 const StartBtn = document.querySelector("#start-btn");
 const PauseBtn = document.querySelector("#pause-btn");
 const ResetBtn = document.querySelector("#reset-btn");
-// function startTime(minute:number, second:number){
-// }
+const PomodoLink = document.querySelector("#pomodoro-link");
+const ShortBreakLink = document.querySelector("#short__break-link");
+const LongBreakLink = document.querySelector("#long__break-link");
+const ResultCountBox = document.querySelector("#result__count-box");
+const BtnActionBox = document.querySelector(".btn-action");
 let intervalId;
 StartBtn.addEventListener("click", () => {
     let minut = +ResultCount.innerText.split(":")[0];

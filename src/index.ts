@@ -3,10 +3,12 @@ const StartBtn: HTMLButtonElement = document.querySelector("#start-btn")
 const PauseBtn: HTMLButtonElement = document.querySelector("#pause-btn")
 const ResetBtn: HTMLButtonElement = document.querySelector("#reset-btn")
 
+const PomodoLink = document.querySelector("#pomodoro-link") as HTMLButtonElement
+const ShortBreakLink = document.querySelector("#short__break-link") as HTMLButtonElement
+const LongBreakLink = document.querySelector("#long__break-link") as HTMLButtonElement
+const ResultCountBox = document.querySelector("#result__count-box") as HTMLDivElement
 
-// function startTime(minute:number, second:number){
-
-// }
+const BtnActionBox = document.querySelector(".btn-action") as HTMLDivElement
 
 let intervalId: number
 StartBtn.addEventListener("click", () => {
@@ -35,3 +37,6 @@ ResetBtn.addEventListener("click", () => {
 PauseBtn.addEventListener("click", () => {
     clearInterval(intervalId)
 })
+
+
+
